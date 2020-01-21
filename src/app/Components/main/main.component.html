@@ -1,0 +1,24 @@
+<input type="text" placeholder="enter summoner name" [(ngModel)] = "sumName">
+<button (click)="showInfo()">Buscar</button>
+<div *ngFor="let champ of champImgs; let i = index" id="champ{{i}}" class="champ">
+  <img class="champImg" src="\assets\champion\{{champ}}">
+  <div class="container">
+      <div *ngIf="sumStatus[i+i] == 0; else elseBlock" class="spells">
+        <a (click)="countVisibility($event)"><img id="{{i+i}}"  src="\assets\spells\{{spellsArray[i+i].img}}"></a>
+      </div>
+      <ng-template #elseBlock class="block1">
+        <countdown #cd1 [config]="{leftTime: spellsArray[i+i].cd , format: 'm:ss'}" (event)="handleEvent($event, i+i)"></countdown>
+      </ng-template>
+
+      <div *ngIf="sumStatus[i+i+1] == 0; else elseBlock1" class="spells">
+        <a (click)="countVisibility($event)"><img id="{{i+i+1}}"  src="\assets\spells\{{spellsArray[i+i+1].img}}"></a>
+      </div>
+      <ng-template #elseBlock1 class="block2">
+        <countdown #cd2 [config]="{leftTime: spellsArray[i+i+1].cd, format: 'm:ss'}" (event)="handleEvent($event,i+i+1)"></countdown>
+      </ng-template>
+  </div>
+</div>
+
+
+
+
