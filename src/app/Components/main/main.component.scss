@@ -1,15 +1,150 @@
 .champ{
+  margin-left: 10px;
   display: inline-block;
-  margin-left: 5%;
+  height: 232px;
+  width: 150px;
+  vertical-align: top;
+  background-color: rgb(15, 14, 14)00;
 }
-.champImg{
-  width: 100%;
+.champ .champImg{
+  height: 150px;
+  width: 150px;
+
 }
 .spells{
   display: inline-block;
-
 }
-
-.container .count-down{
-  font-size: 2em;
+.spells .spellImg{
+  height: 75px;
+  width: 75px;
+}
+.SummonerFlash{
+  background-image: url(src\assets\spells\SummonerFlashFade.png);
+  background-size: cover;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 2.05em;
+  color: white;
+  margin-top: 0px;
+  padding-top: 18px;
+  padding-bottom: 19px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.SummonerBarrier{
+  background-image: url(src\assets\spells\SummonerBarrierFade.png);
+  background-size: cover;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 2.05em;
+  color: white;
+  margin-top: 0px;
+  padding-top: 18px;
+  padding-bottom: 19px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.SummonerDot{
+  background-image: url(src\assets\spells\SummonerDotFade.png);
+  background-size: cover;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 2.05em;
+  color: white;
+  margin-top: 0px;
+  padding-top: 18px;
+  padding-bottom: 19px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.SummonerBoost{
+  background-image: url(src\assets\spells\SummonerBoostFade.png);
+  background-size: cover;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 2.05em;
+  color: white;
+  margin-top: 0px;
+  padding-top: 18px;
+  padding-bottom: 19px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.SummonerExhaust{
+  background-image: url(src\assets\spells\SummonerExhaustFade.png);
+  background-size: cover;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 2.05em;
+  color: white;
+  margin-top: 0px;
+  padding-top: 18px;
+  padding-bottom: 19px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.SummonerHaste{
+  background-image: url(src\assets\spells\SummonerHasteFade.png);
+  background-size: cover;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 2.05em;
+  color: white;
+  margin-top: 0px;
+  padding-top: 18px;
+  padding-bottom: 19px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.SummonerHeal{
+  background-image: url(src\assets\spells\SummonerHealFade.png);
+  background-size: cover;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 2.05em;
+  color: white;
+  margin-top: 0px;
+  padding-top: 18px;
+  padding-bottom: 19px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.SummonerMana{
+  background-image: url(src\assets\spells\SummonerManaFade.png);
+  background-size: cover;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 2.05em;
+  color: white;
+  margin-top: 0px;
+  padding-top: 18px;
+  padding-bottom: 19px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.SummonerSmite{
+  background-image: url(src\assets\spells\SummonerSmiteFade.png);
+  background-size: cover;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 2.05em;
+  color: white;
+  margin-top: 0px;
+  padding-top: 18px;
+  padding-bottom: 19px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.SummonerTeleport{
+  background-image: url(src\assets\spells\SummonerTeleportFade.png);
+  background-size: cover;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 2.05em;
+  color: white;
+  margin-top: 0px;
+  padding-top: 18px;
+  padding-bottom: 19px;
+  padding-right: 8px;
+  padding-left: 8px;
 }

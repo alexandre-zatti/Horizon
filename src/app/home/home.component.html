@@ -1,0 +1,8 @@
+<body>
+  <div class="search">
+    <mat-form-field>
+    <input matInput type="text" placeholder="enter summoner name" [(ngModel)] = "sumName">
+    </mat-form-field>
+    <button mat-raised-button color="primary" [routerLink]="['./main', sumName]">Buscar</button>
+  </div>
+</body>

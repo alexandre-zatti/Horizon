@@ -6,6 +6,7 @@ import champions from 'src/assets/champion.json';
 import spells from 'src/assets/summoner.json';
 import { CountdownComponent, CountdownEvent } from 'ngx-countdown';
 import { EventEmitter } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-main',
@@ -20,7 +21,7 @@ export class MainComponent  {
   BASE_URL = 'https://br1.api.riotgames.com/lol/';
   SUM_URL ='summoner/v4/summoners/by-name/';
   SPEC_URL = 'spectator/v4/active-games/by-summoner/';
-  API_KEY = '?api_key=RGAPI-675defdf-a57d-4355-bfeb-4e5076048b66';
+  API_KEY = '?api_key=RGAPI-45014070-0b78-436c-bac9-56cc3b64dc3d';
   sumName = '';
   response : any;
   playerTeam : any;
@@ -31,7 +32,16 @@ export class MainComponent  {
 
   constructor(
     private servico: ServicoService,
-  ){}
+    private route: ActivatedRoute
+  ){
+    this.route.params.subscribe(params =>{
+      this.sumName = params['sumName'];
+    });
+    this.showInfo();
+  }
+
+
+
 
   handleErrorSum(error : HttpErrorResponse){
     Swal.fire({
@@ -52,10 +62,9 @@ export class MainComponent  {
   }
 
   showInfo(){
-    console.log(this.sumStatus);
     let FULL_URL = this.BASE_URL + this.SUM_URL + this.sumName + this.API_KEY; //Forma primeira URL para buscar summoner ID
     this.servico.getSummoner(FULL_URL).subscribe(Response =>{
-      this.response = Response;
+     this.response = Response;
       FULL_URL = this.BASE_URL + this.SPEC_URL + this.response['id'] + this.API_KEY;
       this.servico.getSpec(FULL_URL).subscribe(Response =>{
         this.response = Response;
@@ -87,8 +96,6 @@ export class MainComponent  {
     let champKeys : any = Object.values(champData);
     let spellKeys : any = Object.values(spellData);
 
-
-
     for(let i in this.players){
       for(let j in champKeys){
         if(this.players[i].champ == champKeys[j].key){
@@ -96,16 +103,16 @@ export class MainComponent  {
         }
       }
       for(let k in spellKeys){
-        let spellsInfo = {cd: '', img: ''};
+        let spellsInfo = {cd: '', img: '', name: ''};
         if(this.players[i].sum1 == spellKeys[k].key || this.players[i].sum2 == spellKeys[k].key){
           spellsInfo.cd = spellKeys[k].cooldownBurn;
           spellsInfo.img = spellKeys[k].image.full;
+          spellsInfo.name = spellKeys[k].id;
           this.spellsArray.push(spellsInfo);
         }
       }
 
     }
-
   }
 
   handleEvent($event, i): void{
@@ -118,5 +125,6 @@ export class MainComponent  {
   countVisibility(event){
     this.sumStatus[event.target.id] = 1;
   }
+
 
 }
