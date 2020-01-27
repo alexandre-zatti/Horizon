@@ -1,8 +1,15 @@
-<body>
-  <div class="search">
-    <mat-form-field>
-    <input matInput type="text" placeholder="enter summoner name" [(ngModel)] = "sumName">
-    </mat-form-field>
-    <button mat-raised-button color="primary" [routerLink]="['./main', sumName]">Buscar</button>
-  </div>
-</body>
+<div class="container">
+    <div class="searchBox">
+      <!-- <mat-form-field class="mainForm">
+      <input matInput type="text" placeholder="Summoner Name" [(ngModel)] = "sumName">
+      </mat-form-field>
+      <button class="mainButton" mat-raised-button color="primary" [routerLink]="['./main', sumName]"><mat-icon>search</mat-icon></button> -->
+      <input class="searchInput"type="text" placeholder="Summoner Name" [(ngModel)] = "sumName">
+      <button class="searchButton" [routerLink]="['./main', sumName]">
+          <i class="material-icons">
+              search
+          </i>
+      </button>
+    </div>
+</div>
+

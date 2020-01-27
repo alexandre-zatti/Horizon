@@ -20,6 +20,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 import { MatNativeDateModule } from '@angular/material';
 
@@ -47,7 +48,8 @@ import { MatNativeDateModule } from '@angular/material';
     MatSliderModule,
     MatSlideToggleModule,
     MatNativeDateModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,8 +9,7 @@ export class HomeComponent {
 
   sumName = '';
 
-  constructor() { }
-
+  constructor() {}
 
 
 }

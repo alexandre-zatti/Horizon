@@ -1,3 +1,12 @@
+.container{
+  background-color: #141414;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+.mainDiv{
+  margin-top: 30vh;
+}
 .champ{
   margin-left: 10px;
   display: inline-block;
@@ -27,9 +36,9 @@
   color: white;
   margin-top: 0px;
   padding-top: 18px;
-  padding-bottom: 19px;
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-bottom: 18px;
+  padding-right: 5px;
+  padding-left: 6px;
 }
 .SummonerBarrier{
   background-image: url(src\assets\spells\SummonerBarrierFade.png);
@@ -40,9 +49,9 @@
   color: white;
   margin-top: 0px;
   padding-top: 18px;
-  padding-bottom: 19px;
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-bottom: 18px;
+  padding-right: 5px;
+  padding-left: 6px;
 }
 .SummonerDot{
   background-image: url(src\assets\spells\SummonerDotFade.png);
@@ -53,9 +62,9 @@
   color: white;
   margin-top: 0px;
   padding-top: 18px;
-  padding-bottom: 19px;
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-bottom: 18px;
+  padding-right: 5px;
+  padding-left: 6px;
 }
 .SummonerBoost{
   background-image: url(src\assets\spells\SummonerBoostFade.png);
@@ -66,9 +75,9 @@
   color: white;
   margin-top: 0px;
   padding-top: 18px;
-  padding-bottom: 19px;
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-bottom: 18px;
+  padding-right: 5px;
+  padding-left: 6px;
 }
 .SummonerExhaust{
   background-image: url(src\assets\spells\SummonerExhaustFade.png);
@@ -79,9 +88,9 @@
   color: white;
   margin-top: 0px;
   padding-top: 18px;
-  padding-bottom: 19px;
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-bottom: 18px;
+  padding-right: 5px;
+  padding-left: 6px;
 }
 .SummonerHaste{
   background-image: url(src\assets\spells\SummonerHasteFade.png);
@@ -92,9 +101,9 @@
   color: white;
   margin-top: 0px;
   padding-top: 18px;
-  padding-bottom: 19px;
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-bottom: 18px;
+  padding-right: 5px;
+  padding-left: 6px;
 }
 .SummonerHeal{
   background-image: url(src\assets\spells\SummonerHealFade.png);
@@ -105,9 +114,9 @@
   color: white;
   margin-top: 0px;
   padding-top: 18px;
-  padding-bottom: 19px;
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-bottom: 18px;
+  padding-right: 5px;
+  padding-left: 6px;
 }
 .SummonerMana{
   background-image: url(src\assets\spells\SummonerManaFade.png);
@@ -118,9 +127,9 @@
   color: white;
   margin-top: 0px;
   padding-top: 18px;
-  padding-bottom: 19px;
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-bottom: 18px;
+  padding-right: 5px;
+  padding-left: 6px;
 }
 .SummonerSmite{
   background-image: url(src\assets\spells\SummonerSmiteFade.png);
@@ -131,9 +140,9 @@
   color: white;
   margin-top: 0px;
   padding-top: 18px;
-  padding-bottom: 19px;
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-bottom: 18px;
+  padding-right: 5px;
+  padding-left: 6px;
 }
 .SummonerTeleport{
   background-image: url(src\assets\spells\SummonerTeleportFade.png);
@@ -144,7 +153,7 @@
   color: white;
   margin-top: 0px;
   padding-top: 18px;
-  padding-bottom: 19px;
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-bottom: 18px;
+  padding-right: 5px;
+  padding-left: 6px;
 }
