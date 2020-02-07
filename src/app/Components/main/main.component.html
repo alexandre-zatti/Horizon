@@ -8,7 +8,7 @@
               </div>
               <ng-template #elseBlock class="block1">
                 <p class="{{spellsArray[i+i].name}}">
-                  <countdown #cd1 [config]="{leftTime: spellsArray[i+i].cd , format: 'm:ss'}" (event)="handleEvent($event, i+i)"></countdown>
+                  <countdown #cd{{i}} [config]="{leftTime: spellsArray[i+i].cd , format: 'm:ss'}" (event)="handleEvent($event, i+i, i)"></countdown>
                 </p>
               </ng-template>
 
@@ -17,10 +17,11 @@
               </div>
               <ng-template #elseBlock1 class="block2">
                 <p class="{{spellsArray[i+i+1].name}}">
-                  <countdown #cd2 [config]="{leftTime: spellsArray[i+i+1].cd, format: 'm:ss'}" (event)="handleEvent($event,i+i+1)" ></countdown>
+                  <countdown #cd2 [config]="{leftTime: spellsArray[i+i+1].cd, format: 'm:ss'}" (event)="handleEvent($event,i+i+1, i)" ></countdown>
                 </p>
               </ng-template>
             </div>
       </div>
   </div>
+  <button mat-button color="warn" (click)="copySums()">Copy</button>
 </div>

@@ -1,5 +1,5 @@
 .container{
-  background-color: #141414;
+  background-color: black;
   height: 100vh;
   text-align: center;
   overflow: hidden;
@@ -13,8 +13,14 @@
   height: 232px;
   width: 150px;
   vertical-align: top;
-  background-color: rgb(15, 14, 14)00;
+  border: 5px solid;
+  border-image-source: linear-gradient(to bottom, #800080,#ff00d4,black);
+  border-image-slice: 1;
+
 }
+
+
+
 .champ .champImg{
   height: 150px;
   width: 150px;

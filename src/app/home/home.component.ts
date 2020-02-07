@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
@@ -9,7 +10,13 @@ export class HomeComponent {
 
   sumName = '';
 
-  constructor() {}
+  constructor(
+    private router: Router
+  ) {}
+
+  changeRoute(sumName){
+    this.router.navigate(['/main/'+sumName]);
+  }
 
 
 }

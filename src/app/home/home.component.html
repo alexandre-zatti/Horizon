@@ -1,10 +1,7 @@
 <div class="container">
+  <img class="mainLogo" src="assets/logo.jpg" alt="">
     <div class="searchBox">
-      <!-- <mat-form-field class="mainForm">
-      <input matInput type="text" placeholder="Summoner Name" [(ngModel)] = "sumName">
-      </mat-form-field>
-      <button class="mainButton" mat-raised-button color="primary" [routerLink]="['./main', sumName]"><mat-icon>search</mat-icon></button> -->
-      <input class="searchInput"type="text" placeholder="Summoner Name" [(ngModel)] = "sumName">
+      <input class="searchInput"type="text" placeholder="Summoner Name" [(ngModel)] = "sumName" (keyup.enter)="changeRoute(sumName)">
       <button class="searchButton" [routerLink]="['./main', sumName]">
           <i class="material-icons">
               search
