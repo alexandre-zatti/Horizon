@@ -1,5 +1,6 @@
 <div class="container">
   <img class="mainLogo" src="assets/logo.jpg" alt="">
+  <img class="name" src="assets/name.png" alt="">
     <div class="searchBox">
       <input class="searchInput"type="text" placeholder="Summoner Name" [(ngModel)] = "sumName" (keyup.enter)="changeRoute(sumName)">
       <button class="searchButton" [routerLink]="['./main', sumName]">

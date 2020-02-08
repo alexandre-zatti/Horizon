@@ -21,7 +21,7 @@ export class MainComponent  {
   BASE_URL = 'https://br1.api.riotgames.com/lol/';
   SUM_URL ='summoner/v4/summoners/by-name/';
   SPEC_URL = 'spectator/v4/active-games/by-summoner/';
-  API_KEY = '?api_key=RGAPI-66c0f58c-8ae9-4366-aa1a-d0380c2c9ae8';
+  API_KEY = '?api_key=RGAPI-fc85655b-1a90-4ce2-8d81-8c6fcbab8cac';
   sumName = '';
   response : any;
   playerTeam : any;
